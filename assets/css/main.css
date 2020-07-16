@@ -56,7 +56,7 @@ body, html {height: 100%;}
   /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
 .menu_ul > li:hover {
-  background-color:darkgoldenrod !important;
+  background-color:#00d9fa !important;
 }
 .menu_ul >li >a{
   text-decoration:none;
@@ -66,20 +66,26 @@ body, html {height: 100%;}
   border-color: navajowhite;
 }
 .btn_active{
-  /* background-color: (45deg, darkgoldenrod, transparent) !important; */
-  background-color:darkgoldenrod !important;
+  /* background-color: (45deg, #00d9fa, transparent) !important; */
+  background-color:#00d9fa !important;
 }
 .dropdown-menu > a{
   padding: 1em;
 }
 .dropdown-menu > a:hover{
-  background-color: goldenrod;
+  background-color: #00d9fa;
 }
 /* ============= </Menu> =================== */
 
 /* ============= </Header> =================== */
 
-.header{background-image:url('../images/home_bg.jpg') ;}
+.header{background-image:url('../images/home_bg.jpg') ;
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
 .header-logo-block{z-index:1;}
 
 /* ============= </Header> =================== */
@@ -135,8 +141,8 @@ body, html {height: 100%;}
 
 #Lunch .header{background-image:url('../images/lunch.jpg') ;   }
 .body .nav-tabs li a{
-  color: goldenrod;
-  background-color: palegoldenrod !important;
+  color: black;
+  background-color: red !important;
 }
 .price{
   float: right;
