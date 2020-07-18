@@ -1,0 +1,18 @@
+     
+
+
+
+    HOME  =   Verdana (BOLD)      SIZE  =  35 pt   ( word gap = 5 ) 
+
+
+
+    Plan Your Trip =  Arial Rounded MT Bold (Regular)    SIZE  =  45 pt  ( word gap = 25 ) 
+
+
+
+    Hyderabad     =   Verdana (BOLD)    SIZE  =  35 pt  ( word gap = 5 )
+
+
+
+
+    

@@ -30,13 +30,14 @@ a:hover{
 .text-gold{ color: goldenrod;}
 .text-darkgoldenrod{color: darkgoldenrod !important;}
 .text-navy{color: #0062cc  !important;}
-
+.text-blue{color: #1f3588;}
 .bg_palegoldenrod{background-color: palegoldenrod !important;}
 .btn_goldenrod{background: goldenrod;border-color: navajowhite;}
 .bg-navy{color: #0062cc  !important;;}
-
+.bg-light_blue{background-color:#2839894d}
 .bg-fix{  background-attachment: fixed !important; }
-
+.bg-footer{background-color: #485d73 !important;}
+.border_bottom{border-bottom: tomato solid 4px;}
 /* Parallax */
 body, html {height: 100%;}
 .parallax {
@@ -92,7 +93,7 @@ body, html {height: 100%;}
 
 /* ============= </Header> =================== */
 
-.header{background-image:url('../images/home_bg.jpg') ;
+.header{background-image:url('../images/home/header_bg.jpg') ;
   background-color: #cccccc;
   height: 600px;
   background-position: center;
@@ -111,10 +112,10 @@ body, html {height: 100%;}
   background-size: cover;
 }
 .mat_trucks_block{
-  background-image:url('../images/car1.jpg') ;
+  background-image:url('../images/home/vehicle_blue.jpg') ;
 }
 .mat_catering_block{
-    background-image:url('../images/car3.jpg') ;
+    background-image:url('../images/home/vehicle_white.jpg') ;
 }
 .testmonials{
     background-color: white;
@@ -132,6 +133,7 @@ body, html {height: 100%;}
 
 /* ============= <Footer> =================== */
 .footer{background-color: whitesmoke;}
+.social_icons >img{width: 80px;}
 /* ============= </Footer> =================== */
 
 /* ============= <Contactus> =================== */
