@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp -R web $DEPLOYPATH
+    - export DEPLOYPATH=/home/xzwjejbp3klp/public_html/
+    - /home/xzwjejbp3klp/repositories/istaparyataka/web -R web $DEPLOYPATH
