@@ -155,10 +155,10 @@ body, html
   background-color: #fffffd;
 }
 .card form{
-  color: goldenrod;
+  color: rgb(32, 128, 218);
 }
 .card form > .btn_submit_form{
-  background: goldenrod;
+  background: rgb(32, 128, 218);
   border-color: navajowhite;
   color:black ;
 }
