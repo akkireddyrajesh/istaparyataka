@@ -50,30 +50,20 @@
               src="./assets/images/home/menu_vehicles.png" class="img img-fluid py-md-4" alt="Responsive image"></div>
           <div class="col-lg-2 col-md-4 col-sm-8 py-5 bg-light_blue">
             <h2 class="h3 text-blue font-weight-bold">Plan Your Trip Today</h2>
-            <form id="myForm" action="/action_page.php">
+            <form id="checkingAvailabilityForm" action="/action_page.php">
               <div class="form-group">
-                <input type="email" name="source" class="form-control" id="source" aria-describedby="emailHelp"
-                  value="Hyderabad" disabled>
+                <input type="text" name="source" class="form-control" id="source" aria-describedby="emailHelp"
+                  value="Hyderabad" readonly>
               </div>
               <div class="form-group">
-                <input type="text" name="destination"class="form-control" id="Destination" 
+                <input type="text" name="destination"class="form-control" id="destination" 
                   placeholder="Destination">
               </div>
               <div class="form-group">
-                <input class="form-control" name="dates" type="date" /><br>
+                <input class="form-control" name="date" id="date" type="date" /><br>
               </div>
               <button type="submit" value="submit"class="btn btn-primary">Check Availability</button>
             </form>
-            <script>
-             var form= document.getElementById("myForm");
-             form.onsubmit = function(e) {
-               e.preventDefault();
-               console.log(form.source.value);
-               console.log(form.destination.value);
-               console.log(form.dates.value);
-              
-              
-              };</script>
           </div>
           <div class="col-lg-5 col-md-4 d-none d-md-block d-lg-block wow animate__animated animate__bounceInRight"><img
               src="./assets/images/home/menu_vehicles.png" class="img img-fluid py-md-4" alt="Responsive image"></div>
