@@ -145,7 +145,13 @@ body, html
 /* ============= </Main> =================== */
 
 /* ============= <Footer> =================== */
-.footer{background-color: whitesmoke;}
+.footer{background-image:url('../images/home/footer_bg.png') ;
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
 .social_icons >img{width: 80px;}
 /* ============= </Footer> =================== */
 
