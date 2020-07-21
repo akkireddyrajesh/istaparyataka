@@ -145,14 +145,7 @@ body, html
 /* ============= </Main> =================== */
 
 /* ============= <Footer> =================== */
-.footer{background-image:url('../images/home/footer_bg.png') ;
-  background-color: #cccccc;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;}
-.header-logo-block{z-index:1;}
+.footer{background-color: whitesmoke;}
 .social_icons >img{width: 80px;}
 /* ============= </Footer> =================== */
 
