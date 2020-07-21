@@ -4,6 +4,9 @@ $('document').ready(function () {
 
     //checkingAvailability
     checkingAvailability();
+    
+    //contactUs
+    contactUs()
 });
 function activeMenu() {
     const current_path = window.location.pathname.split('/').pop();
@@ -18,6 +21,13 @@ function activeMenu() {
 }
 function checkingAvailability() {
     $('#checkingAvailabilityForm').submit(function(e) {
+        e.preventDefault();
+        console.log($(this).serializeArray());
+    })
+}
+
+function contactUs() {
+    $('#contactUsForm').submit(function(e) {
         e.preventDefault();
         console.log($(this).serializeArray());
     })
