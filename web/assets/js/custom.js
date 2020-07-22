@@ -23,13 +23,11 @@ function activeMenu() {
 function checkingAvailability() {
     $('#checkingAvailabilityForm').submit(function (e) {
         e.preventDefault();
-        let formdata = $(this).serializeArray();
+        let formdata = $(this).serialize();
         console.log(formdata);
-
-
         $.ajax({
             method: "POST",
-            url: "./mail.lib.php",
+            url: "mail.lib.php",
             data: formdata
         })
             .done(function (msg) {
