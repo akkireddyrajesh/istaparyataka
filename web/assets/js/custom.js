@@ -1,10 +1,11 @@
 $('document').ready(function () {
+    // $().alert()
     //Menu 
     activeMenu();
 
     //checkingAvailability
     checkingAvailability();
-    
+
     //contactUs
     contactUs()
 });
@@ -20,14 +21,28 @@ function activeMenu() {
     });
 }
 function checkingAvailability() {
-    $('#checkingAvailabilityForm').submit(function(e) {
+    $('#checkingAvailabilityForm').submit(function (e) {
         e.preventDefault();
-        console.log($(this).serializeArray());
+        let formdata = $(this).serializeArray();
+        console.log(formdata);
+
+
+        $.ajax({
+            method: "POST",
+            url: "./mail.lib.php",
+            data: formdata
+        })
+            .done(function (msg) {
+                alert("Data Saved: " + msg);
+            }).fail(function (err) {
+                $('.alert').addClass('show');
+                console.log(`[ERR] [API] @ checkingAvailability() is `, err);
+            });
     })
 }
 
 function contactUs() {
-    $('#contactUsForm').submit(function(e) {
+    $('#contactUsForm').submit(function (e) {
         e.preventDefault();
         console.log($(this).serializeArray());
     })

@@ -33,12 +33,12 @@ $headers .= 'From: <contactus@shreeistaparyaataka.com>' . "\r\n";
 
 // mail($to,$subject,$message,$headers);
 //sg2plcpnl0013.prod.sin2.secureserver.net
-$allowed_hosts = array('localhost');
-if (!isset($_SERVER['HTTP_HOST']) || !in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
-    header($_SERVER['SERVER_PROTOCOL'].' 400 Bad Request');
-    echo "bad request"
-    exit;
-}
+// $allowed_hosts = array('localhost');
+// if (!isset($_SERVER['HTTP_HOST']) || !in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
+//     header($_SERVER['SERVER_PROTOCOL'].' 400 Bad Request');
+//     echo "bad request"
+//     exit;
+// }
 echo gethostname();
 
 ?>
