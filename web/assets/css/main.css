@@ -63,6 +63,7 @@ body, html
 }
 
 /* ============= <Menu> =================== */
+
 .menu_ul >li{
   padding: 1em;
   margin-right: 1em;
@@ -115,6 +116,10 @@ body, html
 /* ============= </Header> =================== */
 
 /* ============= <Main> =================== */
+.services_providing{
+  background-image:url('../images/home/aboutus_bg.jpg') ;
+  background-size: contain;
+}
 .services_box{
   /* Center and scale the image nicely */
   /* background-position: center; */
@@ -122,7 +127,7 @@ body, html
   background-size: cover;
 }
 .about_img_block{
-  background-image:url('../images/home/aboutus.01.jpeg') ;
+  background-image:url('../images/home/aboutus.png') ;
 }
 .mat_trucks_block{
   background-image:url('../images/home/vehicle_blue.jpg') ;
@@ -145,7 +150,13 @@ body, html
 /* ============= </Main> =================== */
 
 /* ============= <Footer> =================== */
-.footer{background-color: whitesmoke;}
+.footer{background-image:url('../images/home/footer_bg.png') ;
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
 .social_icons >img{width: 80px;}
 /* ============= </Footer> =================== */
 

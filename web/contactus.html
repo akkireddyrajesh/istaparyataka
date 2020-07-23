@@ -60,44 +60,67 @@
                       <h5 class="mb-0">
                         <p class="btn btn-link text-dark font-weight-bold" 
                           data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          CONTACT US TODAY 
+                          CONTACT US -TODAY 
                       </p>
                       </h5>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="name">First Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="First Name" required>
-                          </div>
-                          <div class="form-group">
-                            <label for="name">Last Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Last Name" required>
+                        <form id="contactUsForm">
+                    
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              
+                              <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              
+                              <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                            </div>
                           </div>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="name">Email</label>
-                              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                              <label for="name"> </label>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="telefon">Mobile Number</label>
-                              <input type="tel" class="form-control" id="telefon" placeholder="Mobile Number">
+                              <label for="telefon"> </label>
+                              <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="inputAddress">Message</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Type Message Here....">
+                            <label for="name"> </label>
+                              <textarea rows="4" cols="50" class="form-control" id="feedback" name="feedback" placeholder="Type your message here..."></textarea>
                           </div>
                           <button  type="submit" class="btn btn_submit_form text-uppercase">Send Message</button>
                         </form>
                       </div>
                     </div>
                   </div>
-                  
-                  
-                              
                 </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row contact_box py-5 justify-content-md-center text-left bg-fix">
+          <div class="col-12 col-md-6">
+            <div class="row p-1 box">
+                
+                  <div class="card">
+                   
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="social">
+                          <a >
+                          
+                          
+                          <img class="p-6" src="https://wealthyesprit.com/wp-content/uploads/2018/11/thankyou-1-1.jpg" alt="Trulli"
+                                        width="100%" height="100%"/></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
             </div>
           </div>
         </div>
@@ -159,9 +182,10 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+    <script src="./assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
