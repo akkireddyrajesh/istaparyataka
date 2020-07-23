@@ -42,7 +42,14 @@
 
     </nav>
     <header class="row header ">
-      <div class="col-md-12 py-lg-5 my-lg-2 py-md-2 my-md-0"></div>
+      <div class="col-md-12 py-md-2 my-md-0">
+        <div class="alert alert-danger alert-dismissible fade" role="alert">
+          <strong>Sorry</strong> Currently we are not accepting any booking
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
       <div class="col-md-12 py-lg-5 my-lg-2 py-md-2 my-md-0"></div>
       <div class="col-12 text-center">
         <div class="row">
@@ -50,17 +57,17 @@
               src="./assets/images/home/menu_vehicles.png" class="img img-fluid py-md-4" alt="Responsive image"></div>
           <div class="col-lg-2 col-md-4 col-sm-8 py-5 bg-light_blue">
             <h2 class="h3 text-blue font-weight-bold">Plan Your Trip Today</h2>
-            <form id="checkingAvailabilityForm">
+            <form id="checkingAvailabilityForm" method="POST">
               <div class="form-group">
                 <input type="text" name="source" class="form-control" id="source" aria-describedby="emailHelp"
                   value="Hyderabad" readonly>
               </div>
               <div class="form-group">
                 <input type="text" name="destination"class="form-control" id="destination" 
-                  placeholder="Destination">
+                  placeholder="Destination" required>
               </div>
               <div class="form-group">
-                <input class="form-control" name="date" id="date" type="date" /><br>
+                <input class="form-control" name="date" id="date" type="date" required/><br>
               </div>
               <button type="submit" value="submit" class="btn btn-primary">Check Availability</button>
             </form>
@@ -69,6 +76,7 @@
               src="./assets/images/home/menu_vehicles.png" class="img img-fluid py-md-4" alt="Responsive image"></div>
         </div>
       </div>
+
     </header>
 
     <!-- Main Section -->
@@ -83,12 +91,8 @@
                   <div class="col ">
                     <h2 class="h1 pb-5 text-blue"><span class="border_bottom">ABOUT US</span></h2>
                     <p class="wow animate__animated  text-hash-light animated">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                      type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      Planning a trip will no longer be daunting. Book our caravan to experience real pleasure in travelling. Whether it is for spiritual retreats, sightseeing visits or pleasure trips to build camaraderie, our caravan lets you savour the journey as much as the destination. With 11 push Back seats, well-equipped pantry and audio versions system, our caravan makes your travel comfortable and enjoyable. The fully sanitizer and anti-bacterial WC with modern amenities ensures a seamless trip without the need to use detestable public toilets. The extra TVS balloon suspension in our caravan prevents back strain while travelling on bumpy roads. 
+Make your trip memorable by choosing SHREE ISTA PARYATAKA - The caravan that is designed for comfortable and hassle free travel.
                     </p>
                   </div>
                 </div>
@@ -178,9 +182,10 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+    <script src="./assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
