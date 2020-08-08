@@ -42,6 +42,10 @@ function checkingAvailability() {
 function contactUs() {
     $('#contactUsForm').submit(function (e) {
         e.preventDefault();
+        $('.contact_form_box').toggle();
+        $('.contact_form_thanks_box').toggle();
         console.log($(this).serializeArray());
     })
+    
+    
 }
