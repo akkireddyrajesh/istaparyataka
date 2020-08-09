@@ -30,21 +30,39 @@ function checkingAvailability() {
             url: "mail.lib.php",
             data: formdata
         })
-            .done(function (msg) {
-                alert("Data Saved: " + msg);
-            }).fail(function (err) {
-                $('.alert').addClass('show');
-                console.log(`[ERR] [API] @ checkingAvailability() is `, err);
-            });
+        .done(function (msg) {
+            alert("Data Saved: " + msg);
+        }).fail(function (err) {
+            // $('.alert').addClass('show');
+            // console.log(`[ERR] [API] @ checkingAvailability() is `, err);
+            // if (confirm('Due To COVID-19 Bookings are closed. we will let you know once services are up. would you like to setup reminder mail')) {
+            //     // Save it!
+            //     window.location='contactus.html';
+            // }
+            $('.bookingAvailability_box').toggle();
+        });
     })
 }
 
 function contactUs() {
     $('#contactUsForm').submit(function (e) {
         e.preventDefault();
-        $('.contact_form_box').toggle();
-        $('.contact_form_thanks_box').toggle();
-        console.log($(this).serializeArray());
+        let formdata = $(this).serialize();
+        console.log('formdata :: ',formdata);
+        $.ajax({
+            method: "POST",
+            url: "mail.lib.php",
+            data: formdata
+        })
+        .done(function (msg) {
+            $('.contact_form_box').toggle();
+            $('.contact_form_thanks_box').toggle();
+        }).fail(function (err) {
+            alert('Please try after some time...');
+            // $('.contact_form_box').toggle();
+            // $('.contact_form_thanks_box').toggle();
+            console.log(`[ERR] [API] @ checkingAvailability() is `, err);
+        });
     })
     
     
