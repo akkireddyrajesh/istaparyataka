@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto+Condensed:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%26subset%3Dlatin-ext&ver=1.0.0');
-
 .h1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
@@ -8,6 +7,7 @@
     letter-spacing: 2px;
     margin-bottom: 0;
 }
+
 .span {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
@@ -15,41 +15,88 @@
     letter-spacing: 2px;
     color: #0d81da;
 }
+
 .p {
     font-family: 'Heebo', sans-serif;
     color: #999;
     /* margin: 20px 0 50px 0; */
     max-width: 800px;
 }
-a{
-  text-decoration: none !important;
-  cursor: pointer;
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
 }
-a:hover{
-  color:transparent;
+
+a:hover {
+    color: transparent;
 }
+
+
 /* color list */
-.text-gold{ color: goldenrod;}
-.text-darkgoldenrod{color: darkgoldenrod !important;}
-.text-navy{color: #0062cc  !important;}
-.text-blue{color: #1f3588;}
-.text-hash-light{color: #696b6d;}
-.bg_palegoldenrod{background-color: palegoldenrod !important;}
-.btn_goldenrod{background: goldenrod;border-color: navajowhite;}
-.bg-navy{background-color: #0062cc  !important;;}
-.bg-light_blue{background-color:#2839894d}
-.bg-fix{  background-attachment: fixed !important; }
-.bg-footer{background-color: #485d73 !important;}
-.border_bottom{border-bottom: tomato solid 4px;}
-/* Parallax */
-body, html
-{
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  /* line-height: 1.15; */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  height: 100%;
+
+.text-gold {
+    color: goldenrod;
 }
+
+.text-darkgoldenrod {
+    color: darkgoldenrod !important;
+}
+
+.text-navy {
+    color: #0062cc !important;
+}
+
+.text-blue {
+    color: #1f3588;
+}
+
+.text-hash-light {
+    color: #696b6d;
+}
+
+.bg_palegoldenrod {
+    background-color: palegoldenrod !important;
+}
+
+.btn_goldenrod {
+    background: goldenrod;
+    border-color: navajowhite;
+}
+
+.bg-navy {
+    background-color: #0062cc !important;
+    ;
+}
+
+.bg-light_blue {
+    background-color: #2839894d
+}
+
+.bg-fix {
+    background-attachment: fixed !important;
+}
+
+.bg-footer {
+    background-color: #485d73 !important;
+}
+
+.border_bottom {
+    border-bottom: tomato solid 4px;
+}
+
+
+/* Parallax */
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    /* line-height: 1.15; */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
 .parallax {
     /* The image used */
     /* background-image: url("../images/bg.png"); */
@@ -58,152 +105,289 @@ body, html
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     /* background-position: center;  */
-    background-repeat:repeat;
+    background-repeat: repeat;
     /* background-size: cover; */
 }
 
+
 /* ============= <Menu> =================== */
 
-.menu_ul >li{
-  padding: 1em;
-  margin-right: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-
-  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
-}
-.menu_ul > li:hover {
-  background-color:#2c3a92 !important;
-  color:whitesmoke !important;
-}
-.menu_ul >li >a{
-  color:#007bff;
-  text-decoration:none;
-  text-decoration-color: black;
-}
-.menu_ul > li:hover .menu_ul >li >a, .menu_ul >li >a:hover{
-  color:whitesmoke;
-  /* text-decoration:none; */
-  /* text-decoration-color: black; */
-}
-.btn_orederOnline{
-  background-color: (45deg, black);
-  border-color: black;
+.menu_ul>li {
+    padding: 1em;
+    margin-right: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
 
-.dropdown-menu > a{
-  padding: 1em;
+.menu_ul>li:hover {
+    background-color: #2c3a92 !important;
+    color: whitesmoke !important;
 }
+
+.menu_ul>li>a {
+    color: #007bff;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.menu_ul>li:hover .menu_ul>li>a,
+.menu_ul>li>a:hover {
+    color: whitesmoke;
+    /* text-decoration:none; */
+    /* text-decoration-color: black; */
+}
+
+.btn_orederOnline {
+    background-color: (45deg, black);
+    border-color: black;
+}
+
+.dropdown-menu>a {
+    padding: 1em;
+}
+
+
 /* .btn
   {
     background-color: (45deg, black);
     border-color: black;
 } */
+
+
 /* ============= </Menu> =================== */
 
-/* ============= </Header> =================== */
-
-.header{background-image:url('../images/home/header_bg.jpg') ;
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;}
-.header-logo-block{z-index:1;}
 
 /* ============= </Header> =================== */
+
+.header {
+    background-image: url('../images/home/header_bg.jpg');
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bn-header {
+    background-image: url('../images/booknow_IMG.jpg');
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-logo-block {
+    z-index: 1;
+}
+
+.myCard {
+    height: 480px;
+    width: 75%;
+}
+
+.myHeader {
+    background-color: #75d2e1;
+    height: 600px;
+    width: 100%;
+}
+
+.img_slider {
+    background-color: #477fca;
+    height: 580px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bn_header {
+    background-image: url('../images/home/booknow_IMG.jpg');
+    background-color: #cccccc;
+    width: auto;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= </Header> =================== */
+
 
 /* ============= <Main> =================== */
-.services_providing{
-  background-image:url('../images/home/aboutus_bg.jpg') ;
-  background-size: contain;
+
+.services_providing {
+    background-image: url('../images/home/aboutus_bg.jpg');
+    background-size: contain;
 }
-.services_box{
-  /* Center and scale the image nicely */
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.services_box {
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.about_img_block{
-  background-image:url('../images/home/aboutus.png') ;
+
+.about_img_block {
+    background-image: url('../images/home/aboutus.png');
 }
-.mat_trucks_block{
-  background-image:url('../images/home/vehicle_blue.jpg') ;
+
+.mat_trucks_block {
+    background-image: url('../images/home/vehicle_blue.jpg');
 }
-.mat_catering_block{
-    background-image:url('../images/home/vehicle_white.jpg') ;
+
+.mat_catering_block {
+    background-image: url('../images/home/vehicle_white.jpg');
 }
-.testmonials{
+
+.testmonials {
     background-color: white;
 }
-.btn_arrow{
+
+.btn_arrow {
     background-color: white;
     color: white;
 }
-.btn_arrow:hover{
+
+.btn_arrow:hover {
     cursor: pointer;
     background-color: orange;
     color: black;
 }
+
+.my-ticket {
+    box-shadow: 10px 10px 5px #c4c3c3;
+}
+
+.pkg_bg_img {
+    background-image: url('../images/pkg_bg.PNG');
+}
+
+.pkg_bg_1_img {
+    background-image: url('../images/pkg_bg_1.PNG');
+    background-position: center;
+    background-color: #cccccc;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.logo_size {
+    height: 12vh;
+    width: 40vh;
+}
+
+.ticket_logo {
+    height: 25vh;
+    background-color: beige;
+    text-align: center;
+}
+
+.bg_ticket {
+    background-color: #e9b754;
+    border-width: 0.1rem;
+    border-color: white;
+}
+
+.br-style {
+    border-bottom: 4px dashed white;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+}
+
+.bn_bg_img {
+    background-image: url('../images/BG.png');
+    background-color: #cccccc;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
 /* ============= </Main> =================== */
 
+
 /* ============= <Footer> =================== */
-.footer{background-image:url('../images/home/footer_bg.png') ;
-  background-color: #cccccc;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;}
-.social_icons >img{width: 80px;}
+
+.footer {
+    background-image: url('../images/home/footer_bg.png');
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.social_icons>img {
+    width: 80px;
+}
+
+
 /* ============= </Footer> =================== */
 
+
 /* ============= <Contactus> =================== */
-#contact .header{background-image:url('../images/contactus/contactus_bg.png') ;   }
-.box{
-  background-color: #fffffd;
+
+#contact .header {
+    background-image: url('../images/contactus/contactus_bg.png');
 }
-.card form{
-  color: rgb(32, 128, 218);
+
+.box {
+    background-color: #fffffd;
 }
-.card form > .btn_submit_form{
-  background: rgb(32, 128, 218);
-  border-color: navajowhite;
-  color:black ;
+
+.card form {
+    color: rgb(32, 128, 218);
 }
+
+.card form>.btn_submit_form {
+    background: rgb(32, 128, 218);
+    border-color: navajowhite;
+    color: black;
+}
+
 
 /* ============= </Contactus> =================== */
 
+
 /* ============= <Lunch> =================== */
 
-#Lunch .header{background-image:url('../images/lunch.jpg') ;   }
-.body .nav-tabs li a{
-  color: black;
-  background-color: red !important;
+#Lunch .header {
+    background-image: url('../images/lunch.jpg');
 }
-.price{
-  float: right;
-  color: darkgoldenrod;
-  font-weight: bold;
+
+.body .nav-tabs li a {
+    color: black;
+    background-color: red !important;
 }
+
+.price {
+    float: right;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
 
 /* ============= </Lunch> =================== */
 
 
 /* ============= <alacarte> =================== */
 
-#Alacarte .header{background-image:url('../images/alacarte.jpg') ;}
+#Alacarte .header {
+    background-image: url('../images/alacarte.jpg');
+}
 
 
 /* ============= </alacarte> =================== */
 
 
-
 /* ============= <catering> =================== */
 
-#catering .header{background-image:url('../images/catering.jpg') ;}
+#catering .header {
+    background-image: url('../images/catering.jpg');
+}
 
 
 /* ============= </catering> =================== */
@@ -211,28 +395,43 @@ body, html
 
 /* ============= <Order_online> =================== */
 
-#Order_online .header{background-image:url('../images/lunch.jpg') ;}
+#Order_online .header {
+    background-image: url('../images/lunch.jpg');
+}
 
 
 /* ============= </Order_online> =================== */
 
+
 /* ============= <Takeaway> =================== */
 
-#takeaway .header{background-image:url('../images/takeaway/takeaway_bg.jpg') ;   }
-.body .nav-tabs li a{
-  color: goldenrod;
-  background-color: palegoldenrod !important;
+#takeaway .header {
+    background-image: url('../images/takeaway/takeaway_bg.jpg');
 }
-.price{
-  float: right;
-  color: darkgoldenrod;
-  font-weight: bold;
+
+.body .nav-tabs li a {
+    color: goldenrod;
+    background-color: palegoldenrod !important;
 }
-.tab_content_body_block h3 {border-bottom: 2px solid red; }
+
+.price {
+    float: right;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+.tab_content_body_block h3 {
+    border-bottom: 2px solid red;
+}
+
+
 /* .tab_content_body_block p:nth-child(even) {color: red;font-weight: bold;} */
+
 
 /* ============= </Takeaway> =================== */
 
+
 /* ============= <indisk_mattradition> =================== */
+
 
 /* ============= </indisk_mattradition> =================== */
