@@ -9,12 +9,9 @@
     <link rel="icon" href="./assets//images/logo/Favicon.png" type="image/png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
-        integrity="sha512-Cb0WDP6lVyVaQJulFMEOBGpkgqU6UAOEBpthbb9BfdhmUXnmYQwobuCm6Xp2YYL6Pd/l0ZA5Up/ijp0fu+nFpQ=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" integrity="sha512-Cb0WDP6lVyVaQJulFMEOBGpkgqU6UAOEBpthbb9BfdhmUXnmYQwobuCm6Xp2YYL6Pd/l0ZA5Up/ijp0fu+nFpQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
@@ -22,7 +19,7 @@
     <div class="container-fluid parallax position-relative">
         <!--Navbar section-->
         <nav data-section="menu" class="navbar row justify-content-between navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand col-2" href="index.html"><img class="img " src="assets/images/logo/logo.png"alt="shree ista payataka" /></a>
+            <a class="navbar-brand col-2" href="index.html"><img class="img img-fluid" src="assets/images/logo/logo.png" alt="shree ista payataka" /></a>
             <button class="navbar-toggler bg-navy" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,167 +41,86 @@
         </header>
 
         <!-- Main Section -->
-        <main class="row main bn_bg_img">
-            <div class="container col-md-12">
-
-                <div class="row contact_box py-5 px-5 justify-content-md-center text-left bg-fix">
-
-                    <div class="col-12 col-md-6">
-                        <div class="contact_form_box row p-5 box">
-                            <div class="col " id="accordion">
-                                <div class="card">
-                                    <div class="card-header bg_palegreen" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <p class="btn btn-link text-dark font-weight-bold" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                CONTACT US -TODAY
-                                            </p>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <form id="contactUsForm">
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-12">
-
-                                                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-12">
-
-                                                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-12">
-
-                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-12">
-
-                                                        <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-
-                                                    <textarea rows="4" cols="50" class="form-control" id="feedback" name="feedback" placeholder="Type your message here..."></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn_submit_form text-uppercase">Send Message</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <main class="row bn_bg_img d-flex justify-content-center">
+            <div class="container card-deck d-flex justify-content-center my-5">
+                <div class="col-md-6 col-sm-6 d-flex justify-content-center">
+                    <div class="card row d-flex justify-content-center">
+                        <div class="card-header">
+                            <h5>
+                                <p class="btn btn-link text-dark font-weight-bold">
+                                    CONTACT US -TODAY
+                                </p>
+                            </h5>
                         </div>
-                        <div class="contact_form_thanks_box row p-5 box" style="display: none;">
-
-                            <div class="card">
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="social">
-                                            <a>
-
-
-                                                <img class="p-6" src="https://wealthyesprit.com/wp-content/uploads/2018/11/thankyou-1-1.jpg" alt="Trulli" width="100%" height="100%" /></a>
-                                        </div>
+                        <div class="card-body">
+                            <form id="contactUsForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
                                     </div>
                                 </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="contact_form_box row p-5  box">
-                            <div class="col " id="accordion">
-                                <div class="card" style="background-color: #3f5483;">
-                                    <div class="card-header bg_palegreen" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <p class="btn btn-link text-light font-weight-bold" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                CONTACT INFORMATION
-                                            </p>
-                                        </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <form id="contactUsForm">
-                                                <div class="form-row text-light">
-                                                    <div class="form-group col-md-12">
-                                                        <label for="telefon"><span style="font-size:30px"><i class="fas fa-map-marker-alt pl-2"></i></span><span class="pl-5">Lorem ipsum dolor sit amet.dolor sit amet</span></label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row text-light">
-                                                    <div class="form-group col-md-12">
-                                                        <label for="telefon"><span style="font-size:30px"><i class="fas fa-phone-alt"></i></span><span class="pl-5">+91 9951010359</span> </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row text-light">
-                                                    <div class="form-group col-md-12">
-                                                        <label for="name"><span style="font-size:30px"><i class="far fa-envelope"></i></span><span class="pl-5">www.sreeistaparyataka.com</span> </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row text-light">
-                                                    <div class="form-group col-md-12">
-                                                        <label for="telefon"> </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row text-light">
-                                                    <div class="form-group col-md-12">
-                                                        <label for="telefon"> </label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group text-light">
-                                                    <label for="telefon">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt explicabo similique pariatur quisquam?</label>
-                                                </div>
-
-                                            </form>
-                                        </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="contact_form_thanks_box row p-5 box" style="display: none;">
-
-                            <div class="card">
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <div class="social">
-                                            <a>
-
-
-                                                <img class="p-6" src="https://wealthyesprit.com/wp-content/uploads/2018/11/thankyou-1-1.jpg" alt="Trulli" width="100%" height="100%" /></a>
-                                        </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
-                            </div>
-
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="4" cols="50" class="form-control" id="feedback" name="feedback" placeholder="Type your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn_submit_form text-uppercase">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-6 d-flex justify-content-center">
+                    <div class="card row d-flex justify-content-center" style="background-color: #3f5483;">
+                        <div class="card-header">
+                            <h5>
+                                <p class="btn btn-link text-light font-weight-bold">
+                                    CONTACT-INFORMATION
+                                </p>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactUsForm row text-left">
+                                <div class="form-row text-light">
+                                    <div class="form-group col-md-12">
+                                        <label for="telefon"><span style="font-size:2.4rem"><i class="fas fa-map-marker-alt pl-2"></i></span></label>
+                                        <label class="pl-4"><span><p>Lorem ipsum dolor sit amet.dolor sit amet</p></span></label>
+                                    </div>
+                                </div>
+                                <div class="form-row text-light">
+                                    <div class="form-group col-md-12">
+                                        <label for="telefon"><span style="font-size:2.4rem"><i class="fas fa-phone-alt"></i></span></label>
+                                        <label class="pl-4"><span><p>+91 9951010359</p></span> </label>
+                                    </div>
+                                </div>
+                                <div class="form-row text-light">
+                                    <div class="form-group col-md-12">
+                                        <label for="name"><span style="font-size:2.4rem"><i class="far fa-envelope"></i></span></label>
+                                        <label class="pl-4"><span>www.sreeistaparyataka.com</span></label>
+                                    </div>
+                                </div>
 
-                <!-- Branch Locations -->
-                <!-- <div class="row branch_locations py-4 justify-content-center text-center text-uppercase">
-          <div class="col-12 ">
-            <div class="row py-3 justify-content-between text-center">
-              <div class="col wow animate__animated animate__zoomIn ">
-                  <iframe title="KÖPMANSGATAN 19"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.5010313697157!2d11.968383351693358!3d57.707946646890726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8bf839348bd3%3A0x8080a3c66877e20f!2sTandoori%20Kitchen%20Nordstan!5e0!3m2!1sen!2sin!4v1593980349799!5m2!1sen!2sin"
-                    width="100%" height="400px" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-                </p>
-              </div>
+                                <div class="form-group text-light">
+                                    <label for="telefon">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt explicabo similique pariatur quisquam?</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div> -->
 
-
-
-
-            </div>
         </main>
 
         <!-- Footer -->
@@ -242,12 +158,8 @@
         </div>
 
         <script src="./assets/js/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
         <script src="./assets/js/custom.js"></script>
         <script>

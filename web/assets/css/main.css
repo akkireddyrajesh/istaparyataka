@@ -201,6 +201,7 @@ html {
     height: 580px;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 .bn_header {
@@ -264,6 +265,8 @@ html {
 
 .pkg_bg_img {
     background-image: url('../images/pkg_bg.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pkg_bg_1_img {
