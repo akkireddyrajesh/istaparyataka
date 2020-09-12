@@ -1,11 +1,22 @@
 <?php
+ $host = "localhost"; /* Host name */
+$user = "meat_mr"; /* User */
+$password = "123456"; /* Password */
+$dbname = "car_book"; /* Database name */
+
+$con = mysqli_connect($host, $user, $password,$dbname);
+// Check connection
+if (!$con) {
+ die("Connection failed: " . mysqli_connect_error());
+}
+ 
 
 /**
  * Mail Function Info Block
  */
-$officeMail='contactus@shreeistaparyaataka.com';
+$officeMail='kvprasad0410@gmail.com';
 $fromMail='SHREE ISTA PARYATAKA <no-reply@dstonesgroup.com>';
-$Cc='Cc: akkireddyrajesh@gmail.com';
+$Cc='Cc: kvprasad0410@gmail.com';
 
 /**
  * POST METHOD HANDLING BLOCK
@@ -31,6 +42,7 @@ function prepareMail($formData) {
   $subject='News Letter Subscription';
   $message=null;
   if ($formData['formName']=='contactform') {
+     
 
   $subject = "Feedback From Mr/Ms. ".$formData['fname'];
     
@@ -74,6 +86,13 @@ function prepareMail($formData) {
     </body>
     </html>
     ";
+     $sql = "INSERT INTO  contact (name,lastname,email,phone,message)VALUES ('".$formData['fname']."','".$formData['lname']."','".$formData['email']."',,'".$formData['mobile']."',,'".$formData['feedback']."')";
+
+
+
+       $result1 =       mysqli_query($con, $sql);
+    
+    
   }elseif ($formData['formName']=='subscribe') {
     $message = "
     <html>
